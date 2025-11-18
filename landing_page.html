@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vous avez cliqué sur un lien — Que faire ?</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#0ea5a3;--muted:#8393b3;--success:#16a34a}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071124 0%,#071b2a 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:980px;margin:48px auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center}
+    .logo{ width: 100%; height: 100px; border-radius: 12px; background: linear-gradient(135deg, #b90000, #ff4d4d); display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; font-size: 48px; box-shadow: 0 8px 30px rgba(0,0,0,.6); }
+    h1{margin:0;font-size:1.6rem}
+    p.lead{color:var(--muted);margin:8px 0 20px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:20px;margin-bottom:20px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .grid{display:grid;/*grid-template-columns:1fr 320px*/ ;gap:18px}
+    @media (max-width:860px){.grid{grid-template-columns:1fr}}
+    ul{margin:0 0 12px 20px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-report{background:var(--accent);color:#022;box-shadow:0 6px 18px rgba(14,165,163,.16)}
+    .btn-safe{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .step{display:flex;gap:12px;align-items:flex-start}
+    .step .num{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+    footer{color:var(--muted);font-size:.9rem;text-align:center;margin-top:18px}
+    .warning{background:linear-gradient(90deg,#3b82f6 0%,#06b6d4 100%);padding:12px;border-radius:10px;color:#001; font-weight:700}
+    .muted{color:var(--muted)}
+    .no-track{font-size:.85rem;color:var(--muted);margin-top:10px}
+    .small{font-size:.95rem}
+    code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">⚠️</div>
+      <div>
+        <h1>Oups vous vous êtes fait avoir par les chalutiers des MA2 informatique</h1>
+        <p class="lead" style="font-size: 20px;">Pas d'inquétude : ce mail a été envoyé pour une campagne de sensibilisation sur le phishing dans le cadre du cours de cyber sécurité.
+            Pour que l'enquête soit la plus représentative possible, merci de ne pas prévenir vos camarades.
+        </p>
+      </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section>
+        <div class="card">
+          <h2>Qu'est‑ce que le phishing ?</h2>
+          <p class="muted small">Le <strong>phishing</strong> (ou hameçonnage) est une technique utilisée par des fraudeurs pour obtenir vos informations (mots de passe, coordonnées bancaires, pièces jointes malveillantes) en se faisant passer pour une source de confiance (banque, service en ligne, collègue...).</p>
+
+          <h3>Signes fréquents</h3>
+          <ul>
+            <li>Expéditeur inhabituel ou adresse proche mais incorrecte (ex. <code>support@your-bank.com</code> vs <code>support@yourbank-secure.com</code>).</li>
+            <li>Fautes d'orthographe, ton alarmiste ("compte suspendu"), ou urgences pressantes.</li>
+            <li>Liens raccourcis ou adresses qui ne correspondent pas au site affiché.</li>
+            <li>Demandes d'informations sensibles par email ou par formulaire non sécurisé.</li>
+          </ul>
+
+          <h3>Ce que vous devriez faire maintenant — actions immédiates</h3>
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <strong>Ne fournissez aucune information.</strong>
+              <div class="muted">Ne saisissez pas de mots de passe, numéros de carte ou données personnelles sur le site où vous êtes arrivé.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <strong>Fermez l'onglet et déconnectez-vous si vous avez entré vos identifiants.</strong>
+              <div class="muted">Changez votre mot de passe immédiatement (sur un appareil sûr) et activez la double authentification (2FA) si disponible.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <strong>Scannez votre appareil.</strong>
+              <div class="muted">Lancez un antivirus / anti‑malware réputé pour détecter d'éventuels logiciels téléchargés.</div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="num">4</div>
+            <div>
+              <strong>Signalez l'incident.</strong>
+              <div class="muted">Prévenez votre service IT ou votre administrateur. Si c'est un compte personnel, signalez l'email au prestataire (ex: Gmail, Outlook) et à votre banque si des données bancaires sont concernées.</div>
+            </div>
+          </div>
+
+          <h3>Si vous avez fourni des identifiants ou des données sensibles</h3>
+          <ul>
+            <li>Changez vos mots de passe sur les services concernés et, si vous utilisez le même mot de passe ailleurs, changez-les aussi.</li>
+            <li>Activez la double authentification (2FA) partout où c'est possible.</li>
+            <li>Surveillez vos comptes bancaires et historiques de connexion pour des activités suspectes.</li>
+            <li>Contactez votre banque si des informations financières ont été transmises.</li>
+          </ul>
+
+          <h3>Si vous avez téléchargé une pièce jointe ou exécuté un fichier</h3>
+          <ul>
+            <li>Déconnectez immédiatement l'appareil du réseau (Wi‑Fi / Ethernet).</li>
+            <li>Contactez le support IT et faites analyser l'ordinateur par des outils spécialisés.</li>
+            <li>Ne réutilisez pas l'appareil pour des opérations sensibles avant nettoyage.</li>
+          </ul>
+
+        </div>
+
+        <div class="card">
+          <h2>Conseils pour éviter le phishing</h2>
+          <ul>
+            <li>Vérifiez toujours l'adresse de l'expéditeur et survolez les liens pour voir la vraie URL avant de cliquer.</li>
+            <li>Méfiez‑vous des demandes d'urgence et des pièces jointes inattendues.</li>
+            <li>Utilisez un gestionnaire de mots de passe pour générer et stocker des mots de passe uniques.</li>
+            <li>Activez la double authentification (2FA) partout où possible.</li>
+            <li>Gardez votre système et vos logiciels à jour.</li>
+          </ul>
+          <p class="muted">Pour les équipes : formez régulièrement les employés et simulez des campagnes de phishing pour sensibiliser.</p>
+        </div>
+
+      </section>
+
+      <!-- <aside>
+        <div class="card">
+          <h3>Je veux signaler</h3>
+          <p class="small muted">Cliquez pour envoyer un rapport automatique à l'équipe sécurité / IT. Incluez : <em>heure, URL cliquée, capture d'écran</em> (si possible).</p>
+          <p style="margin-top:12px">
+            <a class="btn btn-report" href="mailto:security@example.com?subject=Signalement%20phishing%20-%20J%27ai%20cliqu%C3%A9&body=Bonjour%20-%0A%0AJ%27ai%20cli%C3%A9%20sur%20le%20lien%20suivant%20:%20%5Bcollez%20l%27URL%20ici%5D%0A%0AHeure%20:%20%5Bhh:mm%20JJ/MM/AAAA%5D%0A%0ADescription%20:%20%5Bd%C3%A9crivez%20ce%20que%20vous%20avez%20fait%20ou%20vu%5D">Signaler par email</a>
+          </p>
+          <p style="margin-top:10px"><a class="btn btn-safe" href="#" onclick="showTips();return false;">Que faire ensuite</a></p>
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.03);margin:12px 0" />
+          <div class="warning">Urgent : si vous avez saisi votre mot de passe, changez‑le maintenant.</div>
+          <p class="no-track">Cette page ne collecte aucune donnée et n'utilise pas de cookies.</p>
+        </div>
+
+        <div class="card">
+          <h3>Ressources utiles</h3>
+          <ul>
+            <li><a href="https://www.cybermalveillance.gouv.fr" target="_blank" rel="noopener">Cybermalveillance.gouv.fr</a> (France) — aide et signalement.</li>
+            <li><a href="https://support.google.com/mail/answer/8253" target="_blank" rel="noopener">Signaler un phishing (Gmail)</a></li>
+            <li class="muted small">Contact IT : <strong>security@example.com</strong> | Tel: <strong>+33 1 23 45 67 89</strong></li>
+          </ul>
+        </div>
+
+      </aside> -->
+    </main>
+
+    <footer>
+      <!-- <div class="muted">Koko la GOAT</div> -->
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color:#10192d; text-decoration:none;">Koko la GOAT</a>
+    </footer>
+  </div>
+
+  <script>
+    // Small helper to show extra tips — keeps page client-side only
+    function showTips(){
+      alert('Conseils rapides:\n- Changez vos mots de passe depuis un appareil sûr.\n- Activez la 2FA.\n- Contactez le support IT et ne réutilisez pas vos identifiants ailleurs.');
+    }
+  </script>
+</body>
+</html>
